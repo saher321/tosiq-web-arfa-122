@@ -1,0 +1,10 @@
+Domain + Hosting
+
+domain
+    - namecheap.com
+hosting
+    - Hostinger
+    - DreamHost
+    - GoDaddy
+    - BlueHost
+    - UltaHost
