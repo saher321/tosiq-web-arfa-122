@@ -1,0 +1,73 @@
+class: Fri, Sat, Sun (12PM-2PM)
+Instructor name: Tosiq
+
+2.5m
+HTML (Hypertext markup language)
+CSS (cascading style sheet)
+BOOTSTRAP / TAILWINDCSS (css libraries)
+JAVASCRIPT (web inter-activity)
+REACTJS (Library) - ui component library
+
+6M
+2.5M
+Backends
+    - php, laravel(Framework)
+    - Mern
+
+1 YEAR (2nd second term)
+
+6M
+Frontend
+Python core
+Django DRF / FastApi (framework api)
+
+C#, ASP.NET
+JAVA, Springboot
+
+Tools:
+    - Browser(Google chrome(recommend), opera, firefox, brave)
+    - vs code
+    - xampp
+    - mongodb compass
+    - postman
+
+
+    Frontend: HTML, CSS, BOOTSTRAP / TAILWINDCSS, JS, REACTJS
+    Backend: php, laravel, nodejs, python, .net, springboot
+    DB: mysql, mongodb, postgresql
+
+-----------------------------------
+
+Portfolio
+Resume
+Git
+linkedin profile
+
+Fiverr / Upwork
+Peopleperhour / freelancers
+
+themeforest / shopify
+
+-----------------------------------
+Free source: vercel, netlify, github
+abcalpha.vercel.app
+
+Domain + Hosting
+abcalpha.com
+domain
+    - namecheap.com
+hosting
+    - Hostinger
+    - DreamHost
+    - GoDaddy
+    - BlueHost
+    - UltaHost
+
+
+----------------------------------------
+URL/API (WEB DEVELOPMENT)
+Webpage
+Website
+
+Static page
+Dynamic page
