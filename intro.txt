@@ -65,7 +65,7 @@ hosting
 
 
 ----------------------------------------
-URL/API (WEB DEVELOPMENT)
+URL / API (WEB DEVELOPMENT)
 Webpage
 Website
 
