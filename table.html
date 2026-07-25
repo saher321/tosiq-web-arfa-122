@@ -7,17 +7,26 @@
 </head>
 <body>
     <h2>Html Table</h2>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <!-- <td>3</td> -->
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <!-- <td>7</td> -->
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <hr />
 
     <table border="1" cellspacing="0" cellpadding="15" width="100%">
-        <thead>
-            <tr>
-                <th>Sr#</th>
-                <th>Product name</th>
-                <th>Price</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td>101</td>
                 <td>Notebook</td>
@@ -30,10 +39,7 @@
                 <td>2000</td>
                 <td>Low stock</td>
             </tr>
-        </tbody>
     </table>
-
-    table>tr*20>td*20
 
 </body>
 </html>
