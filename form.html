@@ -25,50 +25,56 @@
 
     
     <form>
-        <div>
-            <label>Full name</label>
-            <input type="text" placeholder="Enter name" />
-        </div>
 
-        <div>
-            <label>Email address</label>
-            <input type="email" placeholder="Enter email" />
-        </div>
+        <fieldset>
+            <legend>Account</legend>
+            <div>
+                <label>Email address</label>
+                <input type="email" placeholder="Enter email" />
+            </div>
 
-        <div>
-            <label>Password</label>
-            <input type="password" placeholder="Enter strong password" />
-        </div>
+            <div>
+                <label>Password</label>
+                <input type="password" placeholder="Enter strong password" />
+            </div>
+        </fieldset>
 
-        <div>
-            <label>DOB</label>
-            <input type="date" />
-        </div>
-        
-        <div>
-            <label>Photo</label>
-            <input type="file" accept=".png" />
-        </div>
-        
-        <div>
-            <label>Contact</label>
-            <input type="number" placeholder="Enter phone number" />
-        </div>
+        <fieldset>
+            <legend>Personal</legend>
+            <div>
+                <label>Full name</label>
+                <input type="text" placeholder="Enter name" />
+            </div>
+
+            <div>
+                <label>DOB</label>
+                <input type="date" />
+            </div>
+            
+            <div>
+                <label>Photo</label>
+                <input type="file" accept=".png" />
+            </div>
+            
+            <div>
+                <label>Contact</label>
+                <input type="number" placeholder="Enter phone number" />
+            </div>
+
+            <div>
+                <label>Gender</label> <br />
+                
+                <input type="radio" id="male" name="std-reg" />
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="std-reg" />
+                <label for="female">Female</label>
+            </div>
+        </fieldset>
 
         <div>
             <label>Section color</label>
             <input type="color" />
-        </div>
-
-        
-        <div>
-            <label>Gender</label> <br />
-            
-            <input type="radio" id="male" name="std-reg" />
-            <label for="male">Male</label>
-            
-            <input type="radio" id="female" name="std-reg" />
-            <label for="female">Female</label>
         </div>
         
         <div>
