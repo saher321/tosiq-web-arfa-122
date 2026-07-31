@@ -1,0 +1,15 @@
+Create 5 pages
+
+1- Personal Information (personal_info.html)
+your bio data
+
+2- Summary (summary.html)
+Describe yourself
+
+3- Education (education.html)
+sr# degree obtained marks total marks grade
+
+4- Exprerience (exprerience.html)
+
+
+5- Skills (skills.html)
