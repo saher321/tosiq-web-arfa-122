@@ -1,0 +1,14 @@
+h1 {
+    color: darkgray
+}
+
+.information {
+    color: green;
+    background-color: yellow;
+    padding: 8px 4px 5px 12px;
+    margin: 8px 4px 5px 12px
+}
+
+.paragraph {
+    color: red;
+}
