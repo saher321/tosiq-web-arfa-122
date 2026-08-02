@@ -1,0 +1,39 @@
+h1 {
+    color: green
+}
+
+.btn1 {
+    background-color: purple;
+    border: 1px solid #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.btn2 {
+    background-color: green;
+    border: 1px solid #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.btn3 {
+    background-color: tomato;
+    border: 1px solid #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 100%;
+}
+.btn4 {
+    background-color: brown;
+    border: 1px solid #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+.btn5 {
+    background-color: #46C284;
+    border: 1px solid #333;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
