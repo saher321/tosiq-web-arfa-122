@@ -1,0 +1,9 @@
+.heading {
+    /* box-shadow: x-axis y-axis blurness spreadness color */
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 6px lightgray;
+    padding: 4px 20px;
+    border-radius: 4px;
+    border-bottom: 2px solid #7ec4fa;
+    border-top: 2px solid #7ec4fa
+}

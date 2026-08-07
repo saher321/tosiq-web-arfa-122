@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+p {
+  text-align: justify;
+  text-align-last: center;
+
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: red;
+
+  text-transform: capitalize;
+}

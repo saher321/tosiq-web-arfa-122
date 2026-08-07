@@ -1,39 +1,53 @@
 h1 {
-    color: green
+  color: green;
 }
 
 .btn1 {
-    background-color: purple;
-    border: 1px solid #333;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 4px;
+  background-color: purple;
+  border: 1px solid #333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
 }
 .btn2 {
-    background-color: green;
-    border: 1px solid #333;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
+  background-color: green;
+  border: 1px solid #333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
 }
 .btn3 {
-    background-color: tomato;
-    border: 1px solid #333;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 100%;
+  background-color: tomato;
+  border: 1px solid #333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 100%;
 }
 .btn4 {
-    background-color: brown;
-    border: 1px solid #333;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 8px;
+  background-color: brown;
+  border: 1px solid #333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px;
 }
 .btn5 {
-    background-color: #46C284;
-    border: 1px solid #333;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 2px;
+  background-color: #46c284;
+  border: 1px solid #333;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 2px;
+}
+
+.green-border {
+  padding: 4px;
+
+  background-color: green;
+  width: fit-content;
+}
+.btn6 {
+  border: 1px dashed #333;
+  color: white;
+  background-color: inherit;
+  padding: 4px 12px;
+  border-radius: 2px;
 }
