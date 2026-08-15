@@ -1,0 +1,25 @@
+:root {
+    --dark-blue: #e94747;
+    --white-color: #fff;
+}
+
+.btn1, .btn2, .btn3 {
+    background-color: #E3F2FD;
+    border: none;
+    color: var(--dark-blue);
+    border-radius: 4px;
+    padding: 6px 16px;
+}
+
+.btn1:hover {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+}
+.btn2:active {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+}
+.btn3:focus {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+}
