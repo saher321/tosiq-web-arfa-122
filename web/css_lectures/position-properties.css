@@ -1,0 +1,29 @@
+.parent {
+    border: 2px solid black;
+    max-width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #f1f1f1
+}
+
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.settings {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    width: fit-content;
+}
