@@ -1,0 +1,39 @@
+h2 {
+    color: blue;
+}
+
+p {
+    color: gray;
+}
+button {
+    display: none;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #717070;
+    }
+
+    h2 {
+        color: red;
+    }
+
+    p {
+        color: green;
+    }
+
+    button {
+        padding: 6px 12px;
+        background-color: #f1f1f1;
+        color: black;
+        display: block;
+    }
+}
