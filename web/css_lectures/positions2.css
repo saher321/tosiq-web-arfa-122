@@ -1,0 +1,50 @@
+.navbar-wrapper {
+    position: sticky;
+    top: 10px;
+}
+.navbar-wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbar-wrapper nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'verdana', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+.s1, .s2, .s3 {
+    background-color: #acacac;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px 0px;
+    height: 300px;
+}
+
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3ddf3a;
+    width: fit-content;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.chat a {
+    display: block;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'verdana', sans-serif;
+    margin: 8px 0px;
+}
