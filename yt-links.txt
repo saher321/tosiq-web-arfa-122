@@ -12,3 +12,6 @@
 
 16 August, 2026 (position)
 	- https://www.youtube.com/watch?v=djFjo1VnGx0
+
+22 August, 2026 (media query + animation)
+	- https://www.youtube.com/watch?v=Z8EcAIWU3j4
