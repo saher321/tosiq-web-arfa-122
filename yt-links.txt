@@ -15,3 +15,6 @@
 
 22 August, 2026 (media query + animation)
 	- https://www.youtube.com/watch?v=Z8EcAIWU3j4
+
+23 August, 2026 (Bootstrap)
+	- https://www.youtube.com/watch?v=GQOwWczIV-A
