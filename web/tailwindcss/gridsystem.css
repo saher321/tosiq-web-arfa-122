@@ -1,0 +1,6 @@
+.grid > div {
+    background-color: purple;
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+}
