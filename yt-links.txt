@@ -22,5 +22,8 @@
 28 August, 2026 (Bootstrap Grid, tailwindcss)
 	- https://www.youtube.com/watch?v=hQ7T8cPKD9g
 
+29 August, 2026 (Tailwindcss grid + assignment )
+	- https://www.youtube.com/watch?v=3qMwpqcO1nE
+	
 30 August, 2026 (JS intro)
 	- https://www.youtube.com/watch?v=jf2n9EXVp3c
