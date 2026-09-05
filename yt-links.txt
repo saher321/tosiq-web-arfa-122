@@ -27,3 +27,6 @@
 	
 30 August, 2026 (JS intro)
 	- https://www.youtube.com/watch?v=jf2n9EXVp3c
+
+5 Sep, 2026 (Getting value from user and calc sum)
+	- https://www.youtube.com/watch?v=LTDbHFd9xqc
