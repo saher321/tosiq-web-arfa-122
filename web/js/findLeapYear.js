@@ -1,7 +1,8 @@
 function findLeapYear() {
     var year = Number(document.getElementById("year").value)
 
-    if (year == 0) {
+    // if (!username || !email || !password) {
+    if (year == 0 || year <= 1900) {
         alert("Please fill the field")
         return;
     }
