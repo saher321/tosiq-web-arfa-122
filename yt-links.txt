@@ -33,3 +33,6 @@
 
 6 Sep, 2026 (if, if else, else if statements)
 	- https://www.youtube.com/watch?v=2YSbBrgPQKU
+
+12 Sep, 2026 (switch, let-var-const difference, loops (for))
+	- https://www.youtube.com/watch?v=QzsrMQq3BkM
