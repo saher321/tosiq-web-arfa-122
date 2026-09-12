@@ -11,6 +11,7 @@ for (i = 1; i <= 10; i++) {
     // let table = 2 + " x " + i + " = " + 2*i
     // console.log(table)
 }
+console.log(sum)
 // 1- 0 + 1 => sum = 1
 // 2- 1 + 2 => sum = 3
 // 10- sum + 10 => sum + 10 => total sum = 55
@@ -20,7 +21,6 @@ for (i = 1; i <= 10; i++) {
 // i = 10, 10 <= 10 :: print 10 , i++
 // i = 11, 11 <= 10 :: print 10
 
-console.log(sum)
 // i = 1, 1 <= 10 :: print 1
 // i = 2, 2 <= 10 :: print 2
 // i = 10, 10 <= 10 :: print 10 , i++
