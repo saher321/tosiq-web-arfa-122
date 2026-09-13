@@ -17,7 +17,7 @@ while(y <= 10) {
     // 2 x 2 = 4
     tblData.innerHTML += `
     <tr>
-        <td> 2 x ${y} = ${2*y} </td>
+        <td> 2 x ${y} = <strong> ${2*y} </strong> </td>
     </tr>
     `
     y++
