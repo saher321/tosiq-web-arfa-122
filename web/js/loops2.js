@@ -28,6 +28,7 @@ function printTable() {
     let tbln = Number(document.getElementById('tblNmbr').value)
     let tblData = document.getElementById("table-data")
     let y = 1
+    tblData.innerHTML = ""
     while(y <= 10) {
         // 2 x 1 = 2
         // 2 x 2 = 4
