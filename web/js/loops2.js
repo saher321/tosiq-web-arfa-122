@@ -10,15 +10,32 @@ for (let i = 1; i <= 100; i++) {
 }
 console.log("Total", sum)
 
-let tblData = document.getElementById("table-data")
-let y = 1
-while(y <= 10) {
-    // 2 x 1 = 2
-    // 2 x 2 = 4
-    tblData.innerHTML += `
-    <tr>
-        <td> 2 x ${y} = <strong> ${2*y} </strong> </td>
-    </tr>
-    `
-    y++
+// let tblData = document.getElementById("table-data")
+// let y = 1
+// while(y <= 10) {
+//     // 2 x 1 = 2
+//     // 2 x 2 = 4
+//     tblData.innerHTML += `
+//     <tr>
+//         <td> 2 x ${y} = <strong> ${2*y} </strong> </td>
+//     </tr>
+//     `
+//     y++
+// }
+
+
+function printTable() {
+    let tbln = Number(document.getElementById('tblNmbr').value)
+    let tblData = document.getElementById("table-data")
+    let y = 1
+    while(y <= 10) {
+        // 2 x 1 = 2
+        // 2 x 2 = 4
+        tblData.innerHTML += `
+        <tr>
+            <td> ${tbln} x ${y} = <strong> ${tbln*y} </strong> </td>
+        </tr>
+        `
+        y++
+    }
 }
