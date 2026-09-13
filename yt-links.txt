@@ -36,3 +36,6 @@
 
 12 Sep, 2026 (switch, let-var-const difference, loops (for))
 	- https://www.youtube.com/watch?v=QzsrMQq3BkM
+
+13 Sep, 2026 (loop)
+	- https://www.youtube.com/watch?v=Vz_s7qeyQ_0
