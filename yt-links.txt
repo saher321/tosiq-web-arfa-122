@@ -39,3 +39,6 @@
 
 13 Sep, 2026 (loop)
 	- https://www.youtube.com/watch?v=Vz_s7qeyQ_0
+
+18 Sep, 2026 (theme in js, local storage)
+	- https://www.youtube.com/watch?v=Q90kPDPPZdo
