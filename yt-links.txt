@@ -42,3 +42,6 @@
 
 18 Sep, 2026 (theme in js, local storage)
 	- https://www.youtube.com/watch?v=Q90kPDPPZdo
+
+19 Sep, 2026 (string, arrays(half))
+	- https://www.youtube.com/watch?v=Hc66hxGmpYw
