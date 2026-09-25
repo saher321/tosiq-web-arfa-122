@@ -20,3 +20,16 @@ function showUsers(users) {
         `
     })
 }
+
+function getFilteredUsers() {
+    let status = document.getElementById("status").value
+    let usersTbl = document.getElementById("users-tbl")
+    usersTbl.innerHTML = ""
+
+    if (status == "all"){
+        showUsers(users)
+    } else {
+        const filteredUsers = users.filter((user) => user.status == status)
+        showUsers(filteredUsers)
+    }
+}
