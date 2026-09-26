@@ -10,4 +10,14 @@ Steps to create React application
         - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 3. For creating react application run this cmd in terminal
+    Install
     - npm create vite@latest
+
+    Run project
+    - npm run dev
+
+    To bring node_modules folder
+    - npm i
+    
+    Pkg Install
+    - npm i pkg_name
