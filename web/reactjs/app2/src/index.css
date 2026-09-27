@@ -1,3 +1,16 @@
 .heading {
     color: red;
 }
+
+.btn {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 3px #333;
+}

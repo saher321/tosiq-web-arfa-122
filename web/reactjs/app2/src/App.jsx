@@ -1,5 +1,7 @@
 import React from 'react'
 import './assets/css/app.css'
+import Button from './components/Button'
+
 const App = () => {
   const content = {
     backgroundColor: "purple"
@@ -7,6 +9,11 @@ const App = () => {
   return (
     <div className='heading'>
       Hello app2
+      <Button text="Explore more" count={3} />
+      <Button text="Login" count={3} />
+      <Button text="Get started" count={3} />
+      <Button text="Signup" count={3} />
+      <Button text="Notifications" count={12} />
       <h3 style={{color: "red", backgroundColor: "gray"}}>
         Sub heading
       </h3>
