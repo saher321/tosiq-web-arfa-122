@@ -48,3 +48,6 @@
 
 20 Sep, 2026 (arrays)
 	- https://www.youtube.com/watch?v=7hfBRFP1hPk
+
+27 Sep, 2026 (Creating react app, css style, component)
+	- https://www.youtube.com/watch?v=QoNwiEuO5hM
