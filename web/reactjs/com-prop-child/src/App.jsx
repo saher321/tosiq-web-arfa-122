@@ -1,6 +1,7 @@
 import React from 'react'
 import SimpleButton from './components/SimpleButton'
 import SectionHeading from './components/SectionHeading'
+import Card from './components/Card'
 
 const App = () => {
   return (
@@ -10,6 +11,14 @@ const App = () => {
       <SimpleButton />
       <SimpleButton />
 
+
+      <section>
+        <Card>
+          <div>img</div>
+          <div>title</div>
+          <div>description</div>
+        </Card>
+      </section>
       <section>
         <SectionHeading title="Testimonials" total="13" />
       </section>
@@ -18,6 +27,14 @@ const App = () => {
       </section>
       <section>
         <SectionHeading title="Contact Form" total="0" />
+      </section>
+
+      <section>
+        <Card>
+          <div>Card-header</div>
+          <div>Card-body</div>
+          <div>Card-footer</div>
+        </Card>
       </section>
     </div>
   )
