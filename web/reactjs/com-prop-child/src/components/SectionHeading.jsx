@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SectionHeading = ({title}) => {
+const SectionHeading = ({title, total}) => {
   return (
-    <h3>{title}</h3>
+    <h3>{title} ({total})</h3> // (12)
   )
 }
 
