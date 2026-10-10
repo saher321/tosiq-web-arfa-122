@@ -55,5 +55,8 @@
 4 Oct, 2026 (Tailwindcss, Navigations)
 	- https://www.youtube.com/watch?v=t06-m9Scj3A
 
-9 oct, 2026 (Components, props, children)
+9 Oct, 2026 (Components, props, children)
 	- https://www.youtube.com/watch?v=4bKyDt6tBY0
+
+10 Oct, 2026 (use state)
+	- https://www.youtube.com/watch?v=oB0fHbdkVpU
