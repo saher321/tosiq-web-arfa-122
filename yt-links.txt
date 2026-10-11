@@ -60,3 +60,6 @@
 
 10 Oct, 2026 (use state)
 	- https://www.youtube.com/watch?v=oB0fHbdkVpU
+
+11 Oct, 2026 (react tabs, useEffect())
+	- https://www.youtube.com/watch?v=2cTfwprNZc4
