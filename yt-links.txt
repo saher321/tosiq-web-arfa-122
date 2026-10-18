@@ -67,3 +67,6 @@
 17 Oct, 2026 (useRef, zustand)
 	- https://www.youtube.com/watch?v=HrfkocrMOtY
 
+18 Oct, 2026 (react dynamic routing)
+	- https://www.youtube.com/watch?v=fr9qj5Rryts
+
