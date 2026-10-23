@@ -70,3 +70,6 @@
 18 Oct, 2026 (react dynamic routing)
 	- https://www.youtube.com/watch?v=fr9qj5Rryts
 
+23 Oct, 2026 (revise: api integration, backend intro)
+	- https://www.youtube.com/watch?v=wIqYlREgIXc
+
