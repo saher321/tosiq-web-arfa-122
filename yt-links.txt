@@ -73,3 +73,6 @@
 23 Oct, 2026 (revise: api integration, backend intro)
 	- https://www.youtube.com/watch?v=wIqYlREgIXc
 
+24 Oct, 2026 (backend start)
+	- https://www.youtube.com/watch?v=UTQmQpLInbE
+

@@ -27,3 +27,28 @@ GET             = Single or multiple
 POST            = Insertion of data
 DELETE          = Deletion of data
 PUT / PATCH     = Updation of current single data
+
+----------------------------
+
+PACKAGES
+
+frontend
+    - zustand, axios, react-router, tailwindcss, react-hook-form
+    react-hot-toast, moment, react-icons / lucide-react
+
+backend
+    - express, nodemon, mongoose, dotenv, jsonwebtoken
+    bcryptjs, nanoid, nodemailer
+
+How to start and create server
+
+Steps: 
+    genarate package.json
+    cmd: npm init -y
+
+    changes (package.json)
+        1- "main": "index.js",
+        2- "dev": "node index.js"
+            -> nodemon : "dev": "nodemon index.js"
+        3- "type": "module"
+
