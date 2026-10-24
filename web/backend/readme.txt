@@ -52,3 +52,12 @@ Steps:
             -> nodemon : "dev": "nodemon index.js"
         3- "type": "module"
 
+
+
+--------------
+REQUEST METHODS
+
+frontend -> get     :::     backend -> get
+forntend -> post    :::     backend -> post
+forntend -> put     :::     backend -> put
+forntend -> delete  :::     backend -> delete
