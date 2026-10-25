@@ -10,7 +10,7 @@ const statuses = [
     {id: "cancelled", text: "Cancelled"},
 ]
 
-app.delete("/statuses", (req, res) => {
+app.get("/statuses", (req, res) => {
     return res.send({ 
         status: true, 
         total: statuses.length,

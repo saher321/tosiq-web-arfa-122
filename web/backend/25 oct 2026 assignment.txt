@@ -1,0 +1,5 @@
+Assignment 25 oct, 2026
+
+Create a backend application 
+(api / backendservice) that shows
+Product category only
