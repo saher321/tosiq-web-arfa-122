@@ -79,3 +79,6 @@
 25 Oct, 2026 (backend with folder structure and api versions)
 	- https://www.youtube.com/watch?v=XCIiFwmftDc
 
+30 Oct, 2026 (database connecting)
+	- https://www.youtube.com/watch?v=tmYW4So3Eqk
+
