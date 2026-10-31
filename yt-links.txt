@@ -85,3 +85,6 @@
 31 Oct, 2026 (Fetch api, display it on frontend)
 	- https://www.youtube.com/watch?v=wHvY_xR1Yd0	
 
+1 Nov, 2026 (insert data)
+	- https://www.youtube.com/watch?v=0vanyMQE3rw
+

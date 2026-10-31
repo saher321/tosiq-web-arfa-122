@@ -1,3 +1,4 @@
 const BASE_URL = "http://localhost:3000/api/v1"
 
 export const USERS_API = BASE_URL + "/users"
+export const ADD_USER_API = BASE_URL + "/users/add"

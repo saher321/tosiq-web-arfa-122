@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import WebLayout from '../layouts/WebLayout'
 import axios from 'axios'
 import { USERS_API } from '../utils/server_apis.js'
+import { Link } from 'react-router'
 
 const Clients = () => {
     const [clients, setClients] = useState([])
@@ -23,6 +24,13 @@ const Clients = () => {
     return (
         <WebLayout>
             <div>
+                <div className='my-5 flex items-center justify-between'>
+                    <div></div>
+                    <Link
+                    to={'/clients/add'}
+                    className='bg-[#186049] text-white shadow-md rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300'
+                    >Add client</Link>
+                </div>
                 <div className='grid grid-cols-12 gap-3'>
                     { clients.map((client) => {
                         return (
