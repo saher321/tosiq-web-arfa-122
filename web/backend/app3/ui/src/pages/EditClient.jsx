@@ -5,7 +5,7 @@ import InputField from '../components/InputField.jsx'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 import axios from 'axios'
-import { EDIT_USER_API } from '../utils/server_apis.js'
+import { EDIT_USER_API, UPDT_USER_API } from '../utils/server_apis.js'
 import { useEffect } from 'react'
 
 const EditClient = () => {
@@ -32,7 +32,7 @@ const EditClient = () => {
     const handleUpdateClient = async (data) => {
         try {
             setLoading(true)
-            const response = await axios.post(ADD_USER_API, data)
+            const response = await axios.put(UPDT_USER_API, data)
             if (response.data.status == true) {
                 toast.success(response.data.message)
                 setLoading(false)

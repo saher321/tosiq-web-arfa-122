@@ -92,3 +92,19 @@ export const getSingleUser = async (req, res) => {
         console.log(error)
     }
 }
+
+export const updateUser = async (req, res) => {
+    const { _id, name, email } = req.body
+    try {
+        const client = await User.findByIdAndUpdate({_id: _id}, { name, email })
+        
+        if (!client) {
+            return res.send({ status: false, message: "Failed to update, try again"})
+        }
+        
+        return res.send({ status: true, message: "Client has been updated"})
+
+    } catch (error) {
+        console.log(error)
+    }
+}
