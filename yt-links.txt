@@ -91,3 +91,6 @@
 7 Nov, 2026 (delete data, get single data, along with ui screens)
 	- https://www.youtube.com/watch?v=-7KMbNVTUBg
 
+8 Nov, 2026 (Update data)
+	- https://www.youtube.com/watch?v=0IhxwbUo_4A
+
