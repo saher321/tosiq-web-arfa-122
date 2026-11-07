@@ -44,7 +44,7 @@ const Clients = () => {
     return (
         <WebLayout>
             <div>
-                <div className='my-5 flex items-center justify-between'>
+                <div className='my-10 flex items-center justify-between'>
                     <div></div>
                     <Link
                     to={'/clients/add'}
@@ -68,7 +68,7 @@ const Clients = () => {
                                         <button onClick={() => handleDeleteClient(client._id)} className="cursor-pointer hover:shadow hover:text-red-600 rounded-full bg-gray-200 p-2">
                                             <Trash size={20}/>
                                         </button>
-                                        <Link className="cursor-pointer hover:shadow hover:text-blue-600 rounded-full bg-gray-200 p-2">
+                                        <Link to={`/clients/edit/${client._id}`} className="cursor-pointer hover:shadow hover:text-blue-600 rounded-full bg-gray-200 p-2">
                                             <UserPen size={20}/>
                                         </Link>
                                     </div>
