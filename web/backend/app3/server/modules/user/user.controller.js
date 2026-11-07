@@ -44,3 +44,27 @@ export const addUser = async (req, res) => {
         console.log(error)
     }
 }
+
+export const deleteUser = async (req, res) => {
+    const { id } = req.params
+    if (!id) {
+        return res.send({ status: false, message: "ID not found!" })
+    }
+
+    try {
+        const client = await User.findByIdAndDelete({ _id : id })
+        const clients = await User.find({})
+        if (!client) {
+            return res.send({ status: false, message: "Client not found!" })
+        }
+
+        return res.send({ 
+            status: true, 
+            clients: clients,
+            message: "Client has been removed"
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
