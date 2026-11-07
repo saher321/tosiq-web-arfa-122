@@ -53,6 +53,8 @@ export const deleteUser = async (req, res) => {
 
     try {
         const client = await User.findByIdAndDelete({ _id : id })
+        // client.isDeleted = true
+        // client.save()
         const clients = await User.find({})
         if (!client) {
             return res.send({ status: false, message: "Client not found!" })

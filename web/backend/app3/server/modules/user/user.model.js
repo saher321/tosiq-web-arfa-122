@@ -9,7 +9,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true
-    }
+    },
+    // isDeleted: {
+    //     type: Boolean,
+    //     default: false
+    // }
 })
 
 const User = mongoose.model("User", userSchema)

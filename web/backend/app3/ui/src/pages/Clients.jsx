@@ -20,6 +20,9 @@ const Clients = () => {
     }
 
     const handleDeleteClient = async (id) => {
+        
+        if (!confirm("Delete this record ?")) return;
+
         try {
             const response = await axios.delete(`${DEL_USER_API}/${id}`)
             if (response.data.status == true) {
