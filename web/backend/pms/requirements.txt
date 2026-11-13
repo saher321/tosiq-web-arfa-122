@@ -1,0 +1,48 @@
+frontend
+    npm create vite@latest ./ (reactjs)
+    pkgs name
+
+    axios, tailwindcss @tailwindcss/vite, react-hook-form
+    react-hot-toast, react-router, lucide-react
+
+backend
+    npm init -y => pkg.json
+    npm run dev
+    pkgs name
+    express
+        - for creating server and making routes
+    nodemon
+        - auto reload our server
+    mongoose
+        - db manupolation
+    cors
+        - prevent from cors policy errors
+    dotenv
+        - keeps important data
+    nodemailer
+        - send emails
+    nanoid
+        - generates randomize characters
+    bcryptjs
+        - converts normal password to secure password
+        password123 => $sywqwqdweqd2.3d23d23dj02dd.d3d2dqdq
+    jsonwebtoken
+        - user obj => eydsaddwededy29d92h3d329dh23dh9dh329dh3dhqhd3d3h0d23qd2qd
+        d30d20dh32hd329d9329dh3dh2hdd.d32dj23jd0d023hd023
+        .d3d23dh29hd932hdh23d923dh
+
+
+------- GOALS --------
+
+PMS (Project management system)
+    -   Authentication (users)
+        - login, register, forgot, reset
+    -   Role based software
+        - Admin
+        - Employee
+
+    -   Customers           ( listing, add, edit, delete, searching, filtering ) 
+    -   Projects            ( listing, add, edit, delete, searching, filtering )
+    -   Employees / Staff   ( listing, add, edit, delete, searching, filtering )  
+    -   Task                ( listing, add, edit, delete, searching, filtering )
+
