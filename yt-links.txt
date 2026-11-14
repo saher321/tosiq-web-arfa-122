@@ -97,3 +97,6 @@
 13 Nov, 2026 (pms initialized)
 	- https://www.youtube.com/watch?v=Bcw83lPhXTE
 
+14 Nov, 2026 (Register ui and api integration)
+	- https://www.youtube.com/watch?v=uzvd5WYGeAI
+
