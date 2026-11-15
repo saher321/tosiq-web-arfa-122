@@ -100,3 +100,6 @@
 14 Nov, 2026 (Register ui and api integration)
 	- https://www.youtube.com/watch?v=uzvd5WYGeAI
 
+15 Nov, 2026 (Login / forgot / reset ui, login api integration)
+	- https://www.youtube.com/watch?v=8QFE5ZHvl1c
+
