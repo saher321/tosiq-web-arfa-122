@@ -72,7 +72,7 @@ const Register = () => {
           </form>
           <Divider />
           <div>
-            Already have an account? <Link className='text-blue-600 hover:underline'>Login</Link>
+            Already have an account? <Link to={"/auth/login"} className='text-blue-600 hover:underline'>Login</Link>
           </div>
         </div>
       </div>

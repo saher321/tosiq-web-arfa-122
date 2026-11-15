@@ -1,1 +1,2 @@
 export const REGISTER_API = "http://localhost:3000/api/v1/auth/register"
+export const LOGIN_API = "http://localhost:3000/api/v1/auth/login"

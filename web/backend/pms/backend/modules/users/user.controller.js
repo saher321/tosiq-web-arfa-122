@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs'
-
 import User from "./user.model.js"
+
 export const register = async (req, res) => {
     const { fullname, email, password } = req.body
     
@@ -45,7 +45,41 @@ export const register = async (req, res) => {
     }
 }
 
-export const login = async (req, res) => {}
+export const login = async (req, res) => {
+    const { email, password } = req.body
+    
+    if (!email || !password) {
+        return res.send({ status: false, message: "Fill all remaining fields" })
+    }
+    
+    try {
+        const user = await User.findOne({ email: email })
+        if (!user) {
+            return res.send({
+                status: false,
+                message: "Account not found!"
+            })
+        }
+
+        const isMatched = await bcrypt.compare(password, user.password);
+
+        if(!isMatched) {
+            //login
+            return res.send({
+                status: false,
+                message: "Password is incorrect!"
+            })
+        }
+
+        return res.send({
+            status: true,
+            message: "Loggedin successfull!"
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 export const forgotPassword = async (req, res) => {}
 

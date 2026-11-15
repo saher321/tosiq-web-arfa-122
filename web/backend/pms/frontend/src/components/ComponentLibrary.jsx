@@ -38,7 +38,6 @@ export const ActionButton = ({ text, className, ...otherProps }) => {
             type="submit"
             className={`
                 cursor-pointer
-                w-full
                 px-6 py-3
                 text-sm font-semibold text-white
                 bg-blue-600
