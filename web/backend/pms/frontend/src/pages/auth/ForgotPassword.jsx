@@ -3,13 +3,32 @@ import AuthLayout from '../../layouts/AuthLayout'
 import { ActionButton, Divider, InputField } from '../../components/ComponentLibrary'
 import { Link } from 'react-router'
 import { useForm } from 'react-hook-form'
-import { LOGIN_API } from '../../utils/server_apis.js'
+import { FORGOT_PASSWORD_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
 import axios from 'axios'
 
 const ForgotPassword = () => {
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit } = useForm()
+
+  const handleForgotPassword = async (data) => {
+    try {
+      setLoading(true)
+      const response = await axios.post(FORGOT_PASSWORD_API, data)
+      if (response.data.status == true) {
+        localStorage.setItem("forgotten_email", data.email)
+        toast.success(response.data.message)
+      } else {
+        toast.error(response.data.message)
+      }
+    } catch (error) {
+      toast.error("Internal server error!")
+      console.log(error)
+    } finally {
+      setLoading(false)
+    }
+
+  }
 
   return (
     <AuthLayout>
@@ -19,7 +38,7 @@ const ForgotPassword = () => {
           <p className='text-gray-500 text-sm italic'>Enter email to receive otp</p>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit(handleForgotPassword)}>
             
             <div>
               <label htmlFor="">Email</label>

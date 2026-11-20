@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../layouts/AuthLayout'
 import { ActionButton, Divider, InputField } from '../../components/ComponentLibrary'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { useForm } from 'react-hook-form'
 import { REGISTER_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
@@ -10,6 +10,7 @@ import axios from 'axios'
 const Register = () => {
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit } = useForm()
+  const navigate = useNavigate()
 
   const handleRegisterUser = async (data) => {
     try {
@@ -17,6 +18,7 @@ const Register = () => {
       const response = await axios.post(REGISTER_API, data)
       if (response.data.status == true) {
         toast.success(response.data.message)
+        navigate("/auth/login", { replace: true })
       } else {
         toast.error(response.data.message)
       }
