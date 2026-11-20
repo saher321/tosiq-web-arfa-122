@@ -32,6 +32,7 @@ export const sendEmail = async ( receiver, subject, content ) => {
         console.log("Message sent: %s", info.messageId);
         // Preview URL is only available when using an Ethereal test account
         console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+        return true
     } catch (err) {
         console.error("Error while sending mail:", err);
     }

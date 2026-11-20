@@ -106,8 +106,8 @@ export const forgotPassword = async (req, res) => {
 
         <small> <strong> Note: Please dont share this OTP to anyone </strong> </small>
         `
-        const response = await sendEmail(user.email, subject, content)
-        // if (response) {
+        const status = await sendEmail(user.email, subject, content)
+        if (status) {
             user.otp = otp
             user.isOtpVerified = false
             user.save()
@@ -117,12 +117,12 @@ export const forgotPassword = async (req, res) => {
                 message: "Otp has been sent to your email"
             })
 
-        // }
+        }
 
-        // return res.send({
-        //     status: false,
-        //     message: "Failed to send otp"
-        // })
+        return res.send({
+            status: false,
+            message: "Failed to send otp"
+        })
 
     } catch (error) {
         console.log(error)
