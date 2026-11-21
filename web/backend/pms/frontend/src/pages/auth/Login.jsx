@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../layouts/AuthLayout'
 import { ActionButton, Divider, InputField } from '../../components/ComponentLibrary'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { useForm } from 'react-hook-form'
 import { LOGIN_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
@@ -10,13 +10,16 @@ import axios from 'axios'
 const Login = () => {
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit } = useForm()
+  const navigate = useNavigate()
 
   const handleLoginUser = async (data) => {
     try {
       setLoading(true)
       const response = await axios.post(LOGIN_API, data)
+      console.log(response.data)
       if (response.data.status == true) {
         toast.success(response.data.message)
+        navigate('/', {replace: true})
       } else {
         toast.error(response.data.message)
       }

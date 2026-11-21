@@ -1,6 +1,9 @@
 import bcrypt from 'bcryptjs'
 import User from "./user.model.js"
 import { generateCode, sendEmail } from '../../utils/common.js'
+import jwt from 'jsonwebtoken'
+import dotenv from 'dotenv'
+dotenv.config()
 
 export const register = async (req, res) => {
     const { fullname, email, password } = req.body
@@ -72,8 +75,14 @@ export const login = async (req, res) => {
             })
         }
 
+        const token = jwt.sign(
+            { id: user._id, fullName: user.fullname, email: user.email, isAdmin: user.isAdmin }, 
+            process.env.SECRETE_KEY, 
+            { expiresIn: "7d" }
+        );
         return res.send({
             status: true,
+            userToken: token,
             message: "Loggedin successfull!"
         })
 
