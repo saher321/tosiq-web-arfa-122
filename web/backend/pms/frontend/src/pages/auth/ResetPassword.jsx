@@ -1,22 +1,28 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../layouts/AuthLayout'
 import { ActionButton, Divider, InputField } from '../../components/ComponentLibrary'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { useForm } from 'react-hook-form'
-import { LOGIN_API } from '../../utils/server_apis.js'
+import { RESET_PASSWORD_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
 import axios from 'axios'
 
-const Login = () => {
+const ResetPassword = () => {
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit } = useForm()
+  const navigate = useNavigate()
 
-  const handleLoginUser = async (data) => {
+  const handleResetPassword = async (data) => {
     try {
       setLoading(true)
-      const response = await axios.post(LOGIN_API, data)
+      const newData = {otp: data.otp, 
+        newPassword: data.newPassword, 
+        email: localStorage.getItem("forgotten_email")
+      }
+      const response = await axios.post(RESET_PASSWORD_API, newData)
       if (response.data.status == true) {
         toast.success(response.data.message)
+        navigate("/auth/login", {replace: true})
       } else {
         toast.error(response.data.message)
       }
@@ -35,7 +41,7 @@ const Login = () => {
           <p className='text-gray-500 text-sm italic'>Fill all the field for your access</p>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit(handleResetPassword)}>
             
             <div>
               <label htmlFor="">OTP</label>
@@ -72,4 +78,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ResetPassword

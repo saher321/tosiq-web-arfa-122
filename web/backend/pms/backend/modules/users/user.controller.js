@@ -129,4 +129,41 @@ export const forgotPassword = async (req, res) => {
     }
 }
 
-export const resetPassword = async (req, res) => {}
+export const resetPassword = async (req, res) => {
+    const { email, otp, newPassword } = req.body
+    
+    if (!otp || !newPassword) {
+        return res.send({ status: false, message: "Remaining fields are required" })
+    }
+    
+    try {
+        const user = await User.findOne({ email: email })
+        if (!user) {
+            return res.send({
+                status: false,
+                message: "User not found!"
+            })
+        }
+
+        if (otp != user.otp) {
+            return res.send({
+                status: false,
+                message: "Invalid otp, try again!"
+            })
+        } else{
+            const salt = bcrypt.genSaltSync(10);
+            const hashPass = bcrypt.hashSync(newPassword, salt);
+            user.otp = null
+            user.password = hashPass
+            user.isOtpVerified = true
+            user.save()
+            return res.send({
+                status: true,
+                message: "Your password has been reset"
+            })
+        }
+
+    } catch (error) {
+        console.log(error)
+    }
+}

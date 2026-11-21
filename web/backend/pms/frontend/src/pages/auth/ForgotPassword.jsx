@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../layouts/AuthLayout'
 import { ActionButton, Divider, InputField } from '../../components/ComponentLibrary'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { useForm } from 'react-hook-form'
 import { FORGOT_PASSWORD_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
@@ -10,6 +10,7 @@ import axios from 'axios'
 const ForgotPassword = () => {
   const [loading, setLoading] = useState(false)
   const { register, handleSubmit } = useForm()
+  const navigate = useNavigate()
 
   const handleForgotPassword = async (data) => {
     try {
@@ -18,6 +19,7 @@ const ForgotPassword = () => {
       if (response.data.status == true) {
         localStorage.setItem("forgotten_email", data.email)
         toast.success(response.data.message)
+        navigate('/auth/reset-password', {replace: true})
       } else {
         toast.error(response.data.message)
       }
