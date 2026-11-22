@@ -74,14 +74,15 @@ export const login = async (req, res) => {
                 message: "Password is incorrect!"
             })
         }
-
+        const userObj = { id: user._id, fullName: user.fullname, email: user.email, isAdmin: user.isAdmin }
         const token = jwt.sign(
-            { id: user._id, fullName: user.fullname, email: user.email, isAdmin: user.isAdmin }, 
+            userObj, 
             process.env.SECRETE_KEY, 
             { expiresIn: "7d" }
         );
         return res.send({
             status: true,
+            loggedInUser: userObj,
             userToken: token,
             message: "Loggedin successfull!"
         })

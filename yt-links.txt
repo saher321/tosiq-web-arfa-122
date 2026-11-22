@@ -106,3 +106,6 @@
 21 Nov, 2026 (forgot, reset password , api integration, JWT=> jsonwebtoken)
 	- https://www.youtube.com/watch?v=LWVisOxAaa8
 
+22 Nov, 2026 (auth-protected routes, useAuth(custom hook in store folder))
+	- https://www.youtube.com/watch?v=gu8s6gMXxwI
+
