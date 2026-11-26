@@ -1,8 +1,15 @@
 import React from 'react'
+import { useAuth } from '../store/useAuth'
 
 const Dashboard = () => {
+  const user = useAuth(state => state.user)
   return (
-    <div>Dashboard</div>
+    <>
+    {
+      user.isAdmin ? <div>Dashboard, {user.fullName}</div>:
+      <>Sample user</>
+    }
+    </>
   )
 }
 
