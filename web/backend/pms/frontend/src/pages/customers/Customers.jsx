@@ -5,14 +5,7 @@ import axios from 'axios'
 import { CUSTOMERS_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
 
-const projects = [
-    { name: "E-commerce Platform", client: "Fashion Store", progress: 25, status: "Pending", color: "bg-orange-500" },
-];
-const statusStyle = {
-    "In Progress": "bg-blue-50 text-blue-600",
-    Completed: "bg-green-50 text-green-600",
-    Pending: "bg-orange-50 text-orange-600",
-};
+
 const Customers = () => {
     const [customers, setCustomers] = useState([])
 
