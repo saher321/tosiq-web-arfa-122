@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import userRouter from './modules/users/user.routes.js'
 import cors from 'cors'
 import connectDB from './config/db.js'
+import customerRouter from './modules/customers/customer.routes.js'
 
 dotenv.config()
 const app = express()
@@ -13,6 +14,7 @@ const PORT = process.env.PORT
 const PREFIX = "/api/v1"
 
 app.use(PREFIX, userRouter)
+app.use(PREFIX, customerRouter)
 
 app.get("/check", (req, res) => {
     return res.send({ status: true, message: "Server is running..." })

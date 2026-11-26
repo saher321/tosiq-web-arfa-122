@@ -109,3 +109,6 @@
 22 Nov, 2026 (auth-protected routes, useAuth(custom hook in store folder))
 	- https://www.youtube.com/watch?v=gu8s6gMXxwI
 
+26 Nov, 2026 (Dashboard ui using ai, customer page, list api integration)
+	- https://www.youtube.com/watch?v=4PT7-PfXejc
+
