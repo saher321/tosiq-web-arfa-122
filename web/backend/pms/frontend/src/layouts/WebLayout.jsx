@@ -8,10 +8,16 @@ import {
   Bell,
   Search,
   Menu,
+  LogOut,
 } from "lucide-react";
 import { NavLink } from "react-router";
+import { useAuth } from '../store/useAuth.js'
+import toast from "react-hot-toast";
 
 const WebLayout = ({children}) => {
+  
+  const logout = useAuth(state => state.logout)
+
   const menuItems = [
     { name: "Dashboard", url: "/", icon: LayoutDashboard},
     { name: "Customers", url: "/customers", icon: Users },
@@ -19,7 +25,10 @@ const WebLayout = ({children}) => {
     { name: "Tasks", url: "/task", icon: CheckSquare },
   ];
 
-  
+  const handleLogout = () => {
+    toast.success("Logout successfull")
+    logout()
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 md:flex">
@@ -99,9 +108,8 @@ const WebLayout = ({children}) => {
                 className="bg-transparent outline-none text-sm ml-2 w-36 lg:w-48"
               />
             </div>
-            <button className="relative p-3 bg-white border border-slate-200 rounded-xl hover:bg-slate-100">
-              <Bell size={19} />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full" />
+            <button onClick={handleLogout} className="relative p-3 bg-white border border-slate-200 rounded-xl hover:bg-slate-100">
+              <LogOut size={19} />
             </button>
             <img
               src="https://i.pravatar.cc/100?img=12"
