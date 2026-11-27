@@ -7,3 +7,4 @@ export const RESET_PASSWORD_API     = BASE_URL + "/auth/reset-password"
 
 // customer apis
 export const CUSTOMERS_API          = BASE_URL + "/customers"
+export const ADD_CUSTOMER_API       = BASE_URL + "/customers/add"

@@ -112,3 +112,6 @@
 26 Nov, 2026 (Dashboard ui using ai, customer page, list api integration)
 	- https://www.youtube.com/watch?v=4PT7-PfXejc
 
+27 Nov, 2026 (Customer Add ui, api integration)
+	- https://www.youtube.com/watch?v=7A1ZMlSqrDA
+

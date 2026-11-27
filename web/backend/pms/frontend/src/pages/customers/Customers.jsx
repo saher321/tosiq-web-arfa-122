@@ -4,6 +4,7 @@ import { MoreHorizontal, Plus } from 'lucide-react'
 import axios from 'axios'
 import { CUSTOMERS_API } from '../../utils/server_apis.js'
 import toast from 'react-hot-toast'
+import { Link } from 'react-router'
 
 
 const Customers = () => {
@@ -36,9 +37,9 @@ const Customers = () => {
                             <h3 className="font-bold text-lg">Customers</h3>
                             <p className="text-xs text-slate-400 mt-1">Operate your client on one go</p>
                         </div>
-                        <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold">
+                        <Link to={'/customers/add'} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold">
                             <Plus size={17} /> <span className="hidden sm:inline">New Customer</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div className="overflow-x-auto">
@@ -56,7 +57,7 @@ const Customers = () => {
                                 {customers.map((customer, i) => (
                                     <tr key={i} className="border-t border-slate-100 hover:bg-slate-50">
                                         <td className="px-6 py-5">
-                                            <p className="font-semibold text-sm">{customer.name}</p>
+                                            <p className="font-semibold text-sm">{customer.fullName}</p>
                                         </td>
                                         <td className="px-6 py-5 w-48">
                                             <p className="font-semibold text-sm">{customer.email}</p>
